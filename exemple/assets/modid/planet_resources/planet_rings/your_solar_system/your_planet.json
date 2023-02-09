@@ -1,0 +1,8 @@
+{
+    "galaxy": "modid:your_galaxy",
+    "solar_system": "modid:your_solar_system",
+    "texture": "modid:textures/sky/your_planet.png",
+    "speed": 88,
+    "scale": 8, 
+    "radius": 1.0
+  }

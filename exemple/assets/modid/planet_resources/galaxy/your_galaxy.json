@@ -1,0 +1,6 @@
+{
+    "galaxy": "modid:your_galaxy",
+    "texture": "modid:textures/sky/your_galaxy.png",
+    "button_color": "purple",
+    "scale": 250
+  }

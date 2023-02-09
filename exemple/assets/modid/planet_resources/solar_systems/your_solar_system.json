@@ -1,0 +1,13 @@
+{
+    "galaxy": "modid:your_galaxy", 
+    "solar_system": "modid:your_solar_system", 
+    "sun": "ad_astra:textures/sky/gui/blue_sun.png", 
+    "sun_scale": 18,
+    "button_color": "turquoise",
+    "ring_color": {
+      "r": 0,
+      "g": 128,
+      "b": 128,
+      "a": 200
+    }
+  }

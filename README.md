@@ -7,29 +7,29 @@ But for now, you need to follow
 ## Ad Astra Addon 101
 
 ### 1) Create our dimension 
-To create our dimension we need to create two folder in data/modid/ :
+To create our dimension we need to create two folder in *data/modid/* :
 
 - dimension : in this folder, you will need to create a file for all your dimensions where you'll put your dimension info like :
-    - the type : here modid:your_planet
+    - the type : here *modid:your_planet*
     - the generator : the minecraft worldgen or a custom one 
     - the biomes sources : which biomes do you want to have in your dimension 
 
 - dimension_type : in this folder, you will need to create a file for all your dimensions where you'll put information like :
     - ambient_light
     - bed_works
-    - effects : be sure to use modid:your_dimension
+    - effects : be sure to use modid:your_planet
 
 ‼️ attention : you will need to make a dimension for your planet AND your planet's orbit
 
 ### 2) Create the Planet Data
-In data/modid/planet_data/planets/ you will need to create a file name like your planet and add theses information :
+In *data/modid/planet_data/planets/* you will need to create a file name like your planet and add theses information :
 ```json
 {
   "translation": "gui.modid.text.yourplanet",
   "galaxy": "modid:your_galaxy", //We create on later in this "tutorial"
   "solar_system": "modid:your_solar_system", // Same here
-  "world": "modid:yourdimension",
-  "orbit_world": "modid:yourdimension_orbit",
+  "world": "modid:your_planet",
+  "orbit_world": "modid:your_planet_orbit",
   "rocket_tier": 4,
   "gravity": 3.721,
   "has_atmosphere": true,
@@ -42,7 +42,7 @@ In data/modid/planet_data/planets/ you will need to create a file name like your
 }
 ``` 
 ### 3) The Resource pack Part 
-To have a cool and working (it's important) addon, you need to add theses four folders in assets/modid/planet_resources :
+To have a cool and working (it's important) addon, you need to add theses four folders in *assets/modid/planet_resources* :
 
 - galaxy : In Ad Astra, there is one galaxy : the milky_way. If you want to add an other galaxy, create a files with the name of your galaxy and put this into the file :
 ```json
@@ -71,7 +71,7 @@ To have a cool and working (it's important) addon, you need to add theses four f
 }
 ```
 
-- planet_rings : in the planet_rings folder, there are two folders : one for each solar_system? So you'll need to create an other one and create a file with the name of your planet and add this :
+- planet_rings : in the planet_rings folder, there are two folders : one for each solar_system So you'll need to create an other one and create a file with the name of your planet and add this :
 ```json
 {
   "galaxy": "modid:your_galaxy",
@@ -87,7 +87,7 @@ To have a cool and working (it's important) addon, you need to add theses four f
 Here an exemple for an orbit : 
 ```json
 {
-    "world": "modid:yourdimension_ordit",
+    "world": "modid:your_planet_ordit",
     "stars": {
         "fancy_count": 13000,
         "fast_count": 6000,
@@ -147,11 +147,11 @@ Here an exemple for an orbit :
 ### 4) The translation part (Aka the last one)
 Now you have successfully (i hope) create a new planet/solar_system/galaxy !
 But they should have name (It's better)
-In your folder assets/modid/lang add a file name en_us.json and add this (if you know modding, this part is a piece of cake) :
+In your folder *assets/modid/lang* add a file name en_us.json and add this (if you know modding, this part is a piece of cake) :
 ```json
 {
-  "gui.modid.text.yourplanet": "My Planets"
-  "gui.modid.text.your_galaxy": "My Galaxy"
+  "gui.modid.text.yourplanet": "My Planets",
+  "gui.modid.text.your_galaxy": "My Galaxy",
   "gui.swplanets.text.your_solar_system": "My Solar System"
 
 }
