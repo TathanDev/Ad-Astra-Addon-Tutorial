@@ -10,19 +10,20 @@ But for now, you need to follow
 To create our dimension we need to create two folder in data/modid/ :
 
 - dimension : in this folder, you will need to create a file for all your dimensions where you'll put your dimension info like :
-                         - the type : here modid:your_planet
-                         - the generator : the minecraft worldgen or a custom one 
-                         - the biomes sources : which biomes do you want to have in your                                       dimension 
+    - the type : here modid:your_planet
+    - the generator : the minecraft worldgen or a custom one 
+    - the biomes sources : which biomes do you want to have in your dimension 
 
 - dimension_type : in this folder, you will need to create a file for all your dimensions where you'll put information like :
-                                      - ambient_light
-                                      - bed_works
-                                      - effects : be sure to use modid:your_dimension
+    - ambient_light
+    - bed_works
+    - effects : be sure to use modid:your_dimension
 
 ‼️ attention : you will need to make a dimension for your planet AND your planet's orbit
 
 ### 2) Create the Planet Data
 In data/modid/planet_data/planets/ you will need to create a file name like your planet and add theses information :
+```json
 {
   "translation": "gui.modid.text.yourplanet",
   "galaxy": "modid:your_galaxy", //We create on later in this "tutorial"
@@ -39,20 +40,22 @@ In data/modid/planet_data/planets/ you will need to create a file name like your
   "has_oxygen": true,
   "button_color": "light_blue"
 }
- 
+``` 
 ### 3) The Resource pack Part 
 To have a cool and working (it's important) addon, you need to add theses four folders in assets/modid/planet_resources :
 
 - galaxy : In Ad Astra, there is one galaxy : the milky_way. If you want to add an other galaxy, create a files with the name of your galaxy and put this into the file :
+```json
 {
   "galaxy": "modid:your_galaxy",
   "texture": "modid:textures/sky/your_galaxy.png",
   "button_color": "purple",
   "scale": 250
 }
+```
 
-
-- solar_systems : in Ad Astra, there is two solar system : the solar_system and proxima _centory. To add an other solar system, create a file with the name of your new solar system and add this : 
+- solar_systems : in Ad Astra, there is two solar system : the solar_system and proxima _centory. To add an other solar system, create a file with the name of your new solar system and add this :
+```json 
 {
   "galaxy": "modid:your_galaxy", //The galaxy of the solar sytem
   "solar_system": "modid:your_solar_system", 
@@ -66,9 +69,10 @@ To have a cool and working (it's important) addon, you need to add theses four f
     "a": 200
   }
 }
-
+```
 
 - planet_rings : in the planet_rings folder, there are two folders : one for each solar_system? So you'll need to create an other one and create a file with the name of your planet and add this :
+```json
 {
   "galaxy": "modid:your_galaxy",
   "solar_system": "modid:your_solar_system",
@@ -77,10 +81,11 @@ To have a cool and working (it's important) addon, you need to add theses four f
   "scale": 8, //The size of your planets
   "radius": 1.0 //Here, it's the firts planet in the solar system
 }
-
+```
 ‼️ : this file is only for the Planet Selection Screen
 - sky_renderers : this folder is important for the player immersion. In the folder, you will need to create a file for each dimension and orbit you will add UNLESS if you don"t want to change something in the sky.
 Here an exemple for an orbit : 
+```json
 {
     "world": "modid:yourdimension_ordit",
     "stars": {
@@ -137,18 +142,20 @@ Here an exemple for an orbit :
         }
     ]
 }
+```
 
 ### 4) The translation part (Aka the last one)
 Now you have successfully (i hope) create a new planet/solar_system/galaxy !
 But they should have name (It's better)
 In your folder assets/modid/lang add a file name en_us.json and add this (if you know modding, this part is a piece of cake) :
+```json
 {
   "gui.modid.text.yourplanet": "My Planets"
   "gui.modid.text.your_galaxy": "My Galaxy"
   "gui.swplanets.text.your_solar_system": "My Solar System"
 
 }
-
+```
 
 Now, you should have a new planet in the Planet Selection Screen
 
