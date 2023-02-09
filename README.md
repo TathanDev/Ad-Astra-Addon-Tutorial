@@ -82,7 +82,8 @@ To have a cool and working (it's important) addon, you need to add theses four f
   "radius": 1.0 //Here, it's the firts planet in the solar system
 }
 ```
-‼️ : this file is only for the Planet Selection Screen
+‼️ : this file was only for the Planet Selection Screen
+
 - sky_renderers : this folder is important for the player immersion. In the folder, you will need to create a file for each dimension and orbit you will add UNLESS if you don"t want to change something in the sky.
 Here an exemple for an orbit : 
 ```json
