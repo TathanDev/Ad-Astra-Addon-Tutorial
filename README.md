@@ -7,7 +7,7 @@ But for now, you need to follow
 ## Ad Astra Addon 101
 
 ### 1) Create our dimension 
-To create our dimension we need to create two folder in *data/modid/* :
+To create our dimension we need to create two folders in *data/modid/* :
 
 - dimension : in this folder, you will need to create a file for all your dimensions where you'll put your dimension info like :
     - the type : here *modid:your_planet*
@@ -41,6 +41,7 @@ In *data/modid/planet_data/planets/* you will need to create a file name like yo
   "button_color": "light_blue"
 }
 ``` 
+
 ### 3) The Resource pack Part 
 To have a cool and working (it's important) addon, you need to add theses four folders in *assets/modid/planet_resources* :
 
@@ -88,7 +89,7 @@ To have a cool and working (it's important) addon, you need to add theses four f
 Here an exemple for an orbit : 
 ```json
 {
-    "world": "modid:your_planet_ordit",
+    "world": "modid:your_planet_orbit",
     "stars": {
         "fancy_count": 13000,
         "fast_count": 6000,
@@ -145,8 +146,8 @@ Here an exemple for an orbit :
 }
 ```
 
-### 4) The translation part (Aka the last one)
-Now you have successfully (i hope) create a new planet/solar_system/galaxy !
+### 4) The translation part (Aka : the last one)
+Now you have successfully (i hope) create a new planet/solar system/galaxy !
 But they should have name (It's better)
 In your folder *assets/modid/lang* add a file name en_us.json and add this (if you know modding, this part is a piece of cake) :
 ```json
@@ -158,6 +159,6 @@ In your folder *assets/modid/lang* add a file name en_us.json and add this (if y
 }
 ```
 
-Now, you should have a new planet in the Planet Selection Screen
+Now, you should have a new planet in the Planet Selection Screen !
 
 If you need more informations about worldgen, you should look at this site : https://misode.github.io/worldgen/
