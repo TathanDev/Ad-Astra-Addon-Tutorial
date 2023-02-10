@@ -19,7 +19,7 @@ To create our dimension we need to create two folder in *data/modid/* :
     - bed_works
     - effects : be sure to use modid:your_planet
 
-‼️ attention : you will need to make a dimension for your planet AND your planet's orbit
+‼️ attention : you will need to make a dimension for your planet AND your planet's orbit. For you planet idea, you need to use *ad_astra:orbit* for the settings and *ad_astra:orbit* for the biome.
 
 ### 2) Create the Planet Data
 In *data/modid/planet_data/planets/* you will need to create a file name like your planet and add theses information :
