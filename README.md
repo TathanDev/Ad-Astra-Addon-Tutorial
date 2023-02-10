@@ -162,3 +162,5 @@ In your folder *assets/modid/lang* add a file name en_us.json and add this (if y
 Now, you should have a new planet in the Planet Selection Screen !
 
 If you need more informations about worldgen, you should look at this site : https://misode.github.io/worldgen/
+
+**You should see the Ad Astra wiki too ! [https://github.com/terrarium-earth/Ad-Astra/wiki](https://github.com/terrarium-earth/Ad-Astra/wiki)**
